@@ -1,0 +1,230 @@
+################ Exercise 1 ################
+
+Consider the Pandas DataFrame "measure" below. Keep the column "Name" and convert the column "Height" to rows
+
+    Name    Height  Weight
+0   Nancy   65      120
+1   Henry    71      165
+2   Alan     60      160
+3   Bob    73      170
+
+Complete the code to return the output
+
+import pandas as pd
+
+df = pd.melt(measure, -----='Name', value_vars='Height')
+
+print(df)
+
+################ Exercise 2 ################
+
+Using the appropriate 'pandas' function, convert the list 'l' to a 'datetime' object
+
+Complete the code to return the output
+
+import pandas as pd
+
+l = ['2012-01-01 091234', '2012-01-01 091234']
+print(pd.-----)
+
+################ Exercise 3 ################
+
+Consider the pandas DataFrame 'df' below. Replace all the 'NaN' values with the value 80.
+
+    id  score
+0   7134   75.0
+1   4020   94.0
+2   6757   NaN
+3   2561   91.0
+4   6875   NaN
+
+Complete the code to return the output
+
+print(df.-----(80))
+
+################ Exercise 4 ################
+
+You have HTML data stored as a string in the variable 'html_doc'. Using bs4, make an instance of 'BeautifulSoup' with 'html_doc' as an argument. Then, print the resulting document as a nested data structure.
+
+Complete the code to return the output
+
+from bs4 import -----
+
+s = -----(html_doc)
+ps = s.prettify()
+fs = print(ps)
+fs
+
+################ Exercise 5 ################
+
+Which of the following is the correct function from the 'pandas' package to import a CSV file?
+
+A. import_csv()
+B. load_csv()
+C. read_csv()
+D. to_csv()
+
+Answer: C
+
+################ Exercise 6 ################
+
+Import the JSON file 'data.json' as a Pandas DataFrame.
+
+Complete the code to return the output
+
+import json
+import pandas as pd
+
+x = pd.-----('data.json')
+print(x)
+
+################ Exercise 7 ################
+
+Import the 'data.csv' file, shown below, as a Pandas DataFrame.
+
+id      name        team
+1       Ann         Bosses
+2       Bob         Champions
+3       Fred        Bosses
+4       Chuck       Champions
+
+Complete the code to return the output
+
+import pandas as pd
+
+file = 'data.csv'
+df = -----
+
+print(df)
+
+################ Exercise 8 ################
+
+Consider the Pandas DataFrame 'score' below. Identify any missing data, printing 'True' for missing values, and 'False' for non-missing values.
+
+    id    math   physics
+0   101   90.0   80.0
+1   102   NaN    89.0
+2   103   85.0   NaN
+
+Complete the code to return the output
+
+print(score.----())
+
+################ Exercise 9 ################
+
+Fill in the missing data with the fill value 0 in the Pandas DataFrame 'game' shown below
+
+game
+
+id      name        team
+1       Amy         Bosses  
+2       Bob         NaN
+3       Chuck       NaN
+4       Richard     Champions
+5       Ethel       NaN
+6       Fred        Champions
+7       Gilly       NaN
+8       Hank        Champions
+
+Complete the code to return the output
+
+import numpy as np
+import pandas as pd
+
+print(-----)
+
+################ Exercise 10 ################
+
+Due to an error in data entry, some rows in the 'store_info' table are duplicated. Clean the data so that there are no longer any duplicated rows.
+
+    store_id    type        sales
+0   143         food        1417
+1   143         clothing    111
+2   143         clothing    111
+3   419         food        6745
+4   365         food        6745
+5   365         food        3551
+
+Select the code to return the output
+
+store_info_no_duplicated= store_info.?
+
+print(store_info_no_duplicated)
+
+A. duplicated()
+B. drop_duplicates()
+C. remove_duplicates()
+D. unique()
+
+Answer: B
+
+################ Exercise 11 ################
+
+The wine data contains information on wines sold in two different stores. Some of the wines are sold in both stores, so have been duplicated in the data. Remove the rows where values in all columns are duplicated.
+
+    style           type    country       price       rating
+0   malbec          red     argentina     19.04       4.2
+1   malbec          red     argentina     18.49       4.2
+2   alvarinho       white   portugal      18.99       4.2
+3   riesling        white   germany       16.95       4.0
+4   valpolicella    red     italy         19.04       4.2
+5   valpolicella    red     italy         19.04       4.2
+
+Complete the code to return the output
+
+wine_no_duplicates = wine.-----
+
+print(wine_no_duplicates)
+
+################ Exercise 12 ################
+
+Consider the Pandas DataFrame 'df' below. Change the data type of the column 'height' to integer.
+
+    name    height
+0   Heather 160.3
+1   Chris   175.1
+2   Eva     165.4
+
+Complete the code to return the output
+
+print(df.height.-----('int64'))
+
+################ Exercise 13 ################
+
+Complete the code to return the output
+
+import numpy as np
+import pandas as pd
+
+data = pd.Series([1, np.nan, 3])
+print(data.-----())
+
+################ Exercise 14 ################
+
+The team at Green Friends have decided to give the Kentiapalm a new nickname. Replace the name Howerd with Kenny in the 'name' column of the 'plants' DataFrame.
+
+--plants
+    name        binomial name           sales price
+0   Alfredo     Monstera Deliciosa      24.95
+1   Isabella    Calathea Orbifolia      28.95
+2   Marty       Areca                   44.95
+3   Ollie       Alocasia Zebrina        29.95
+4   Howerd      Kentiapalm              49.95
+
+Complete the code to return the output
+
+import pandas as pd
+
+plants['name'] = plants['name'].-----('Howerd', 'Kenny')
+print(plants.head())
+
+################ Exercise 15 ################
+
+Complete the code to return the output
+
+import numpy as np
+import pandas as pd
+
+data = pd.Series(['apple', 'banana', 'apple', 'banana'])
+print(data.-----('apple', 'orange'))
+
